@@ -1,13 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main(){
-    int n;
-    cout<<"Enter the number : "<<endl;
-    cin>>n;
+    int n=5;
 
-     for(int i=1; i<=n; i++){
-        char value='A';
+    for(int i=1; i<=n; i++){
+        char value=1;
         for(int j=i; j<=n; j++){
             cout<<" ";
         }
@@ -19,6 +17,4 @@ int main(){
         }
         cout<<endl;
     }
-
-    return 0;
 }
