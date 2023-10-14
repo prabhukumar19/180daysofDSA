@@ -3,17 +3,23 @@ using namespace std;
 
 int main(){
 
-    int arr[]={5,3,6,2,4,1};
+    int arr[]={5,3,6,2,4,1}; //Selection sort with Taking highest number first
     int n=6;
 
-    for(int i=0; i<n-1; i++){
+    for(int i=n-1; i>=0; i--){
+        int maxNumber=arr[i];
         int index=i;
-        for(int j=i+1; j<n; j++){
-            if(arr[index]<arr[j]){
+        for(int j=0; j<i; j++){
+            if(arr[j]>maxNumber){
+                maxNumber=arr[j];
                 index=j;
             }
         }
-        swap(arr[i],arr[index]);
+        if(maxNumber>arr[i]){
+
+            swap(arr[i], arr[index]);
+        }
+
     }
 
     for(int i=0; i<n;i++){

@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int arr[]={5,3,6,2,4,1};
+    int arr[]={5,3,6,2,4,1}; //Selection sort by taking lowest number first;
     int n=6;
     for(int i=0; i<n-1; i++){
         int index=i;
