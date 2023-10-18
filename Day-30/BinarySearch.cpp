@@ -21,6 +21,6 @@ int binarySearch(int arr[], int n, int key){
 }
 
 int main(){
-    int arr[]={1,2,4,6,8,10};
+    int arr[]={1,2,4,6,8,10}; 
     cout<<"Element is found at index : "<<binarySearch(arr, 6,8);
 }
